@@ -50,6 +50,18 @@ function setupInfiniteLoop() {
     const firstClone = carouselItems[0].cloneNode(true);
     const lastClone = carouselItems[carouselItems.length - 1].cloneNode(true);
     
+    // 为克隆元素中的视频添加必要属性
+    firstClone.querySelectorAll('video').forEach(video => {
+        video.muted = true;
+        video.setAttribute('muted', '');
+        video.setAttribute('playsinline', '');
+    });
+    lastClone.querySelectorAll('video').forEach(video => {
+        video.muted = true;
+        video.setAttribute('muted', '');
+        video.setAttribute('playsinline', '');
+    });
+    
     // 添加克隆元素
     carouselInner.appendChild(firstClone);
     carouselInner.insertBefore(lastClone, carouselItems[0]);
@@ -119,6 +131,30 @@ function createDots() {
     }
 }
 
+// 强制播放当前显示项的视频
+function playCurrentVideos() {
+    const allItems = document.querySelectorAll('.carousel-item');
+    if (allItems[currentIndex]) {
+        const videos = allItems[currentIndex].querySelectorAll('video');
+        videos.forEach(video => {
+            video.muted = true;
+            video.setAttribute('muted', '');
+            video.currentTime = 0;
+            // 使用Promise链确保播放
+            const playPromise = video.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(error => {
+                    console.log('Auto-play prevented:', error);
+                    // 用户交互后重试
+                    document.addEventListener('click', () => {
+                        video.play().catch(e => console.log('Retry play failed:', e));
+                    }, { once: true });
+                });
+            }
+        });
+    }
+}
+
 // 初始化
 document.addEventListener('DOMContentLoaded', () => {
     setupInfiniteLoop();
@@ -126,15 +162,13 @@ document.addEventListener('DOMContentLoaded', () => {
     handleTransitionEnd();
     updateCarousel(true);
     
-    // 确保第一个项目的视频自动播放
-    setTimeout(() => {
-        const firstItem = document.querySelectorAll('.carousel-item')[currentIndex];
-        if (firstItem) {
-            const videos = firstItem.querySelectorAll('video');
-            videos.forEach(video => {
-                video.muted = true;
-                video.play().catch(e => console.log('Initial video play failed:', e));
-            });
+    // 延迟播放确保DOM完全加载
+    setTimeout(playCurrentVideos, 200);
+    
+    // 监听可见性变化
+    document.addEventListener('visibilitychange', () => {
+        if (!document.hidden) {
+            playCurrentVideos();
         }
-    }, 100);
+    });
 });
