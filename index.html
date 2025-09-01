@@ -28,21 +28,36 @@
 
     <div class="authors-section">
         <div class="authors-list">
-            <a href="#" class="author-link">First Author<sup>1,2</sup></a>
-            <a href="#" class="author-link">Second Author<sup>2</sup></a>
-            <a href="#" class="author-link">Third Author<sup>1</sup></a>
-            <a href="#" class="author-link">Fourth Author<sup>3</sup></a>
-            <a href="#" class="author-link">Fifth Author<sup>4</sup></a>
-            <a href="#" class="author-link">Sixth Author<sup>2,3</sup></a>
-            <a href="#" class="author-link">Seventh Author<sup>1</sup></a>
-            <a href="#" class="author-link">Eighth Author<sup>5</sup></a>
+            <div style="margin-bottom: 8px;">
+                <a href="#" class="author-link">Zhengyang Liang<sup>*1</sup></a>
+                <a href="#" class="author-link">Daoan Zhang<sup>*2</sup></a>
+                <a href="#" class="author-link">Huichi Zhou<sup>3</sup></a>
+                <a href="#" class="author-link">Rui Huang<sup>4</sup></a>
+                <a href="#" class="author-link">Bobo Li<sup>4</sup></a>
+                <a href="#" class="author-link">Yuechen Zhang<sup>5</sup></a>
+                <a href="#" class="author-link">Shengqiong Wu<sup>4</sup></a>
+            </div>
+            <div>
+                <a href="#" class="author-link">Xiaohan Wang<sup>6</sup></a>
+                <a href="#" class="author-link">Jiebo Luo<sup>2</sup></a>
+                <a href="#" class="author-link">Lizi Liao<sup>1</sup></a>
+                <a href="#" class="author-link">Hao Fei<sup>4</sup></a>
+            </div>
         </div>
         <div class="institutions">
-            <span class="institution"><sup>1</sup>First University</span>
-            <span class="institution"><sup>2</sup>Second University</span>
-            <span class="institution"><sup>3</sup>Third Institute</span>
-            <span class="institution"><sup>4</sup>Fourth University</span>
-            <span class="institution"><sup>5</sup>Fifth Institute</span>
+            <div style="margin-bottom: 8px;">
+                <span class="institution"><sup>1</sup>Singapore Management University</span>
+                <span class="institution"><sup>2</sup>University of Rochester</span>
+                <span class="institution"><sup>3</sup>Imperial College London</span>
+                <span class="institution"><sup>4</sup>National University of Singapore</span>
+            </div>
+            <div>
+                <span class="institution"><sup>5</sup>The Chinese University of Hong Kong</span>
+                <span class="institution"><sup>6</sup>Stanford University</span>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 5px; font-size: 0.9em; color: #888;">
+            <sup>*</sup>Equal Contribution
         </div>
     </div>
 
@@ -80,52 +95,102 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item">
-                    <video loop muted playsinline>
-                        <source src="asserts/videos/long_videos/rf27_veryslow/00023284.mp4" type="video/mp4">
-                    </video>
-                    <p>Text-to-Video Generation Demo</p>
+                    <div style="display: flex; gap: 20px;">
+                        <div style="flex: 1;">
+                            <img src="asserts/demos/object_consistency/girl_dance/0722213202_1.jpg" style="width: 100%; height: auto;">
+                        </div>
+                        <div style="flex: 1;">
+                            <video autoplay loop muted playsinline style="width: 100%;">
+                                <source src="asserts/demos/object_consistency/girl_dance/0722213503_I_want_to_generate_a_20-second_long_video_with_4_s.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <p>Character Consistency: Dancing Girl</p>
                 </div>
                 <div class="carousel-item">
-                    <video loop muted playsinline>
-                        <source src="asserts/videos/long_videos/rf27_veryslow/00019472.mp4" type="video/mp4">
-                    </video>
-                    <p>Image-to-Video Animation Demo</p>
+                    <div style="display: flex; gap: 20px;">
+                        <div style="flex: 1;">
+                            <img src="asserts/demos/any_conditioned/sketch2video/tank_sketch.jpeg" style="width: 100%; height: auto;">
+                        </div>
+                        <div style="flex: 1;">
+                            <video autoplay loop muted playsinline style="width: 100%;">
+                                <source src="asserts/demos/any_conditioned/sketch2video/sketch2vid.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <p>Sketch to Video: Tank Generation</p>
                 </div>
                 <div class="carousel-item">
-                    <video loop muted playsinline>
-                        <source src="asserts/videos/long_videos/rf27_veryslow/00174833.mp4" type="video/mp4">
-                    </video>
-                    <p>Interactive Multi-Round Creation Demo</p>
+                    <div style="display: flex; gap: 20px;">
+                        <div style="flex: 1;">
+                            <video autoplay loop muted playsinline style="width: 100%;">
+                                <source src="asserts/demos/any_conditioned/video2video/woman_smile_turn_around.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div style="flex: 1;">
+                            <video autoplay loop muted playsinline style="width: 100%;">
+                                <source src="asserts/demos/any_conditioned/video2video/shortvideo2video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <p>Video to Video: Style Enhancement</p>
                 </div>
                 <div class="carousel-item">
-                    <video loop muted playsinline>
-                        <source src="asserts/videos/long_videos/rf27_veryslow/00014937.mp4" type="video/mp4">
+                    <video autoplay loop muted playsinline>
+                        <source src="asserts/demos/object_consistency/cola_ad/0722183105_I_want_to_generate_a_30-second_Coca-Cola_ad..mp4" type="video/mp4">
                     </video>
-                    <p>Long Video Generation with Object Consistency</p>
+                    <p>Coca-Cola Ad with Object Consistency Demo</p>
                 </div>
                 <div class="carousel-item">
-                    <video loop muted playsinline>
-                        <source src="asserts/videos/long_videos/rf27_veryslow/00115965.mp4" type="video/mp4">
+                    <video autoplay loop muted playsinline>
+                        <source src="asserts/demos/complex_generation/bread_talk_ad/0722214643_Please_generate_a_20-second_advertising_video_base.mp4" type="video/mp4">
                     </video>
-                    <p>Complex Scene Generation Demo</p>
+                    <p>Bread Talk Advertisement Demo</p>
                 </div>
                 <div class="carousel-item">
-                    <video loop muted playsinline>
-                        <source src="asserts/videos/long_videos/rf27_veryslow/00124549.mp4" type="video/mp4">
-                    </video>
-                    <p>Style Transfer Demo</p>
+                    <div style="display: flex; gap: 20px;">
+                        <div style="flex: 1;">
+                            <video autoplay loop muted playsinline style="width: 100%;">
+                                <source src="asserts/demos/style_transfer/woman_cartoon/src_video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div style="flex: 1;">
+                            <video autoplay loop muted playsinline style="width: 100%;">
+                                <source src="asserts/demos/style_transfer/woman_cartoon/out_video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <p>Style Transfer: Cartoon Transformation</p>
                 </div>
                 <div class="carousel-item">
-                    <video loop muted playsinline>
-                        <source src="asserts/videos/long_videos/rf27_veryslow/00125436.mp4" type="video/mp4">
-                    </video>
-                    <p>Video Editing Demo</p>
+                    <div style="display: flex; gap: 20px;">
+                        <div style="flex: 1;">
+                            <video autoplay loop muted playsinline style="width: 100%;">
+                                <source src="asserts/demos/video_editing/swap_anything/ori_video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div style="flex: 1;">
+                            <video autoplay loop muted playsinline style="width: 100%;">
+                                <source src="asserts/demos/video_editing/swap_anything/out_video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <p>Video Editing: Object Replacement</p>
                 </div>
                 <div class="carousel-item">
-                    <video loop muted playsinline>
-                        <source src="asserts/videos/long_videos/rf27_veryslow/00053482.mp4" type="video/mp4">
-                    </video>
-                    <p>Video Segmentation and Analysis Demo</p>
+                    <div style="display: flex; gap: 20px;">
+                        <div style="flex: 1;">
+                            <video autoplay loop muted playsinline style="width: 100%;">
+                                <source src="asserts/demos/analysis_segmentation/main_object_seg_analysis/20250601_A_cinematic_profile_portrait_of_a_fitness_model_wi.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div style="flex: 1;">
+                            <video autoplay loop muted playsinline style="width: 100%;">
+                                <source src="asserts/demos/analysis_segmentation/main_object_seg_analysis/woman_seg.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <p>Video Segmentation: Subject Isolation</p>
                 </div>
             </div>
             <div class="carousel-ctrl">
@@ -180,7 +245,7 @@
             <div class="video-item" style="position: relative;">
                 <p class="tiny-title">Round 2</p>
                 <span class="video-label">Demo</span>
-                <video muted playsinline>
+                <video autoplay loop muted playsinline>
                     <source src="asserts/videos/dataset/rf27_veryslow/00177989_crop.mp4" type="video/mp4">
                 </video>
                 <p>User refinement</p>
@@ -188,7 +253,7 @@
             <div class="video-item" style="position: relative;">
                 <p class="tiny-title">Round 3</p>
                 <span class="video-label">Demo</span>
-                <video muted playsinline>
+                <video autoplay loop muted playsinline>
                     <source src="asserts/videos/dataset/rf27_veryslow/00177989_mask.mp4" type="video/mp4">
                 </video>
                 <p>Final adjustments</p>
@@ -202,37 +267,31 @@
             Generate videos from diverse input conditions: text, images, videos, sketches, camera angles, or human poses.
         </p>
         <div class="video-container" style="margin-top: 20px;">
-            <div class="video-item">
-                <p class="tiny-title">Image Input</p>
-                <p style="text-align: left; font-size: 0.9em;">
-                    • Subject reference generation<br>
-                    • Sketch to video<br>
-                    • Pose guidance<br>
-                    • Depth map control
-                </p>
+            <div class="video-item" style="position: relative;">
+                <p class="tiny-title">Sketch Input</p>
+                <img src="asserts/demos/any_conditioned/sketch2video/tank_sketch.jpeg" style="width: 100%; height: auto; border-radius: 4px;">
+                <p>Tank sketch drawing</p>
             </div>
-            <div class="video-item">
+            <div class="video-item" style="position: relative;">
+                <p class="tiny-title">Sketch→Video Output</p>
+                <video autoplay loop muted playsinline>
+                    <source src="asserts/demos/any_conditioned/sketch2video/sketch2vid.mp4" type="video/mp4">
+                </video>
+                <p>Generated tank video</p>
+            </div>
+            <div class="video-item" style="position: relative;">
                 <p class="tiny-title">Video Input</p>
-                <p style="text-align: left; font-size: 0.9em;">
-                    • Style transfer<br>
-                    • Scene replication<br>
-                    • Motion mimicking<br>
-                    • Camera angle matching
-                </p>
+                <video autoplay loop muted playsinline>
+                    <source src="asserts/demos/any_conditioned/video2video/woman_smile_turn_around.mp4" type="video/mp4">
+                </video>
+                <p>Original video</p>
             </div>
             <div class="video-item" style="position: relative;">
-                <p class="tiny-title">Example: Sketch→Video</p>
-                <span class="video-label">Demo</span>
-                <video muted playsinline>
-                    <source src="asserts/videos/dataset/rf27_veryslow/00049967_src.mp4" type="video/mp4">
+                <p class="tiny-title">Video→Video Output</p>
+                <video autoplay loop muted playsinline>
+                    <source src="asserts/demos/any_conditioned/video2video/shortvideo2video.mp4" type="video/mp4">
                 </video>
-            </div>
-            <div class="video-item" style="position: relative;">
-                <p class="tiny-title">Example: Pose→Video</p>
-                <span class="video-label">Demo</span>
-                <video muted playsinline>
-                    <source src="asserts/videos/dataset/rf27_veryslow/00117663_src.mp4" type="video/mp4">
-                </video>
+                <p>Enhanced video</p>
             </div>
         </div>
     </div>
@@ -245,28 +304,28 @@
         </p>
         <div class="video-container" style="margin-top: 20px;">
             <div class="video-item" style="position: relative;">
-                <p class="tiny-title">Single Subject</p>
+                <p class="tiny-title">Girl Dance</p>
                 <span class="video-label">Demo</span>
                 <video autoplay loop muted playsinline>
-                    <source src="asserts/videos/long_videos/rf27_veryslow/00125436.mp4" type="video/mp4">
+                    <source src="asserts/demos/object_consistency/girl_dance/0722213503_I_want_to_generate_a_20-second_long_video_with_4_s.mp4" type="video/mp4">
                 </video>
-                <p>Consistent character across scenes</p>
+                <p>Consistent character dance sequence</p>
             </div>
             <div class="video-item" style="position: relative;">
-                <p class="tiny-title">Multi Subject</p>
+                <p class="tiny-title">Cola Advertisement</p>
                 <span class="video-label">Demo</span>
-                <video muted playsinline>
-                    <source src="asserts/videos/long_videos/rf27_veryslow/00014937.mp4" type="video/mp4">
+                <video autoplay loop muted playsinline>
+                    <source src="asserts/demos/object_consistency/cola_ad/0722183105_I_want_to_generate_a_30-second_Coca-Cola_ad..mp4" type="video/mp4">
                 </video>
-                <p>Multiple consistent entities</p>
+                <p>Consistent branding and characters</p>
             </div>
             <div class="video-item" style="position: relative;">
-                <p class="tiny-title">Temporal Coherence</p>
+                <p class="tiny-title">Laptop Interaction</p>
                 <span class="video-label">Demo</span>
-                <video muted playsinline>
-                    <source src="asserts/videos/long_videos/rf27_veryslow/00115965.mp4" type="video/mp4">
+                <video autoplay loop muted playsinline>
+                    <source src="asserts/demos/object_consistency/old_man_woman_laptop/0722212805_I_want_to_generate_a_video._The_video_depicts_an_e.mp4" type="video/mp4">
                 </video>
-                <p>Natural progression over time</p>
+                <p>Multiple subjects with objects</p>
             </div>
         </div>
     </div>
@@ -281,23 +340,23 @@
             <div class="video-item" style="position: relative;">
                 <span class="video-label">Demo</span>
                 <video autoplay loop muted playsinline>
-                    <source src="asserts/videos/long_videos/rf27_veryslow/00023284.mp4" type="video/mp4">
+                    <source src="asserts/demos/complex_generation/bread_talk_ad/0722214643_Please_generate_a_20-second_advertising_video_base.mp4" type="video/mp4">
                 </video>
-                <p>Multi-scene narrative</p>
+                <p>Bread Talk commercial narrative</p>
             </div>
             <div class="video-item" style="position: relative;">
                 <span class="video-label">Demo</span>
-                <video muted playsinline>
-                    <source src="asserts/videos/long_videos/rf27_veryslow/00174833.mp4" type="video/mp4">
+                <video autoplay loop muted playsinline>
+                    <source src="asserts/demos/complex_generation/bread_talk_ad_with_audio/0728171745_Please_generate_a_20-second_advertising_video_base.mp4" type="video/mp4">
                 </video>
-                <p>Rich environmental storytelling</p>
+                <p>Multi-modal commercial with audio</p>
             </div>
             <div class="video-item" style="position: relative;">
                 <span class="video-label">Demo</span>
-                <video muted playsinline>
-                    <source src="asserts/videos/long_videos/rf27_veryslow/00019472.mp4" type="video/mp4">
+                <video autoplay loop muted playsinline>
+                    <source src="asserts/demos/object_consistency/cola_ad/0722183105_I_want_to_generate_a_30-second_Coca-Cola_ad..mp4" type="video/mp4">
                 </video>
-                <p>Character-driven sequences</p>
+                <p>Brand-focused storytelling</p>
             </div>
         </div>
     </div>
@@ -309,25 +368,25 @@
         </p>
         <div class="video-container" style="margin-top: 20px;">
             <div class="video-item" style="position: relative;">
-                <p class="tiny-title">Original</p>
-                <span class="video-label">Demo</span>
+                <p class="tiny-title">Original Video</p>
                 <video autoplay loop muted playsinline>
-                    <source src="asserts/videos/kive/rf27_veryslow/00067912_input.mp4" type="video/mp4">
+                    <source src="asserts/demos/style_transfer/woman_cartoon/src_video.mp4" type="video/mp4">
                 </video>
+                <p>Source footage</p>
             </div>
             <div class="video-item" style="position: relative;">
-                <p class="tiny-title">Animated Style</p>
-                <span class="video-label">Demo</span>
-                <video muted playsinline>
-                    <source src="asserts/videos/kive/rf27_veryslow/00067912_noflame.mp4" type="video/mp4">
+                <p class="tiny-title">Segmentation Mask</p>
+                <video autoplay loop muted playsinline>
+                    <source src="asserts/demos/style_transfer/woman_cartoon/src_mask.mp4" type="video/mp4">
                 </video>
+                <p>Subject isolation</p>
             </div>
             <div class="video-item" style="position: relative;">
-                <p class="tiny-title">Artistic Style</p>
-                <span class="video-label">Demo</span>
-                <video muted playsinline>
-                    <source src="asserts/videos/kive/rf27_veryslow/00067912_flame.mp4" type="video/mp4">
+                <p class="tiny-title">Cartoon Style Output</p>
+                <video autoplay loop muted playsinline>
+                    <source src="asserts/demos/style_transfer/woman_cartoon/out_video.mp4" type="video/mp4">
                 </video>
+                <p>Transformed result</p>
             </div>
         </div>
     </div>
@@ -340,28 +399,28 @@
         </p>
         <div class="video-container" style="margin-top: 20px;">
             <div class="video-item" style="position: relative;">
-                <p class="tiny-title">Object Replacement</p>
+                <p class="tiny-title">Swap Anything</p>
                 <span class="video-label">Demo</span>
                 <video autoplay loop muted playsinline>
-                    <source src="asserts/videos/long_videos/rf27_veryslow/00053482.mp4" type="video/mp4">
+                    <source src="asserts/demos/video_editing/swap_anything/out_video.mp4" type="video/mp4">
                 </video>
-                <p>Smart object swapping</p>
+                <p>Smart object replacement</p>
             </div>
             <div class="video-item" style="position: relative;">
-                <p class="tiny-title">Background Edit</p>
+                <p class="tiny-title">Video Inpainting</p>
                 <span class="video-label">Demo</span>
-                <video muted playsinline>
-                    <source src="asserts/videos/long_videos/rf27_veryslow/00072338.mp4" type="video/mp4">
+                <video autoplay loop muted playsinline>
+                    <source src="asserts/demos/video_editing/inpainting/out_video.mp4" type="video/mp4">
                 </video>
-                <p>Scene replacement</p>
+                <p>Content removal and filling</p>
             </div>
             <div class="video-item" style="position: relative;">
-                <p class="tiny-title">Content Removal</p>
+                <p class="tiny-title">Pose Editing</p>
                 <span class="video-label">Demo</span>
-                <video muted playsinline>
-                    <source src="asserts/videos/long_videos/rf27_veryslow/00105706.mp4" type="video/mp4">
+                <video autoplay loop muted playsinline>
+                    <source src="asserts/demos/video_editing/pose/out_video.mp4" type="video/mp4">
                 </video>
-                <p>Intelligent inpainting</p>
+                <p>Pose-guided editing</p>
             </div>
         </div>
     </div>
@@ -371,30 +430,20 @@
         <p class="desc">
             Comprehensive video analysis through advanced segmentation. Identify and separate objects, people, and scenes for detailed understanding and reasoning.
         </p>
-        <div class="video-container" style="margin-top: 20px;">
+        <div class="video-container" style="margin-top: 20px; justify-content: center;">
             <div class="video-item" style="position: relative;">
-                <p class="tiny-title">Panoptic Segmentation</p>
-                <span class="video-label">Demo</span>
+                <p class="tiny-title">Original Input</p>
                 <video autoplay loop muted playsinline>
-                    <source src="asserts/videos/dataset/rf27_veryslow/00177989_mask.mp4" type="video/mp4">
+                    <source src="asserts/demos/analysis_segmentation/main_object_seg_analysis/20250601_A_cinematic_profile_portrait_of_a_fitness_model_wi.mp4" type="video/mp4">
                 </video>
-                <p>Complete scene parsing</p>
+                <p>Fitness model portrait</p>
             </div>
             <div class="video-item" style="position: relative;">
-                <p class="tiny-title">Object Tracking</p>
-                <span class="video-label">Demo</span>
-                <video muted playsinline>
-                    <source src="asserts/videos/dataset/rf27_veryslow/00049967_mask.mp4" type="video/mp4">
+                <p class="tiny-title">Segmentation Output</p>
+                <video autoplay loop muted playsinline>
+                    <source src="asserts/demos/analysis_segmentation/main_object_seg_analysis/woman_seg.mp4" type="video/mp4">
                 </video>
-                <p>Multi-object tracking</p>
-            </div>
-            <div class="video-item" style="position: relative;">
-                <p class="tiny-title">Semantic Analysis</p>
-                <span class="video-label">Demo</span>
-                <video muted playsinline>
-                    <source src="asserts/videos/dataset/rf27_veryslow/00117663_mask.mp4" type="video/mp4">
-                </video>
-                <p>Scene understanding</p>
+                <p>Subject isolation & analysis</p>
             </div>
         </div>
     </div>

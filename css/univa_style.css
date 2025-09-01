@@ -201,7 +201,7 @@ h1.univa-main-title {
 .author-link {
     color: #6DE2B4;
     text-decoration: none;
-    margin: 0 12px;
+    margin: 0 6px;
     transition: all 0.3s;
 }
 
@@ -223,7 +223,7 @@ h1.univa-main-title {
 }
 
 .institution {
-    margin: 0 15px;
+    margin: 0 6px;
     display: inline-block;
 }
 
